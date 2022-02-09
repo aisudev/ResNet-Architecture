@@ -1,9 +1,7 @@
 from tensorflow.keras.layers import Input, Add, Dense, Activation, ZeroPadding2D, BatchNormalization
 from tensorflow.keras.layers import Flatten, Conv2D, AveragePooling2D, MaxPooling2D
 from tensorflow.keras.models import Model
-from tensorflow.keras.preprocessing import image
 from tensorflow.keras.initializers import glorot_uniform
-from tensorflow.keras.applications.imagenet_utils import preprocess_input
 
 
 def identity_block(X, f, filters, stage, block):
